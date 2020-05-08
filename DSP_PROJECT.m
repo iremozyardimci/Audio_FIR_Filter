@@ -1,5 +1,4 @@
 %STEP 1(18.03.2020)
-load MyVoice.mat; %load .mat file
 % MyVoice = audiorecorder(44100,16,1); %audiorecorder of MATLAB
 % recordblocking(MyVoice, 5); %limiting the time of audio
 MyVoiceData= getaudiodata(MyVoice); %getting data of audio 
@@ -12,6 +11,7 @@ t1=linspace(0,5,220500); %time variable
 
 %STEP 2 (20.03.2020)
 % save MyVoice.mat; %saving of the recorded audio to be .mat extension
+load MyVoice.mat; %load .mat file
 % filename= 'MyVoice.wav'; %creating any .wav file
 % audiowrite(filename,MyVoiceData,44100); %writing from  recorded and saved .mat audio file to .wav file
 % clear y Fs;
